@@ -1,0 +1,1073 @@
+{
+  "profiles": [
+    {
+      "id": "usr-demo-student",
+      "email": "alex.chen@university.edu",
+      "fullName": "Alex Chen",
+      "role": "student",
+      "preferredDifficulty": "mixed",
+      "preferredLanguage": "English",
+      "themePreference": "light",
+      "onboardingCompleted": true,
+      "createdAt": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "usr-demo-educator",
+      "email": "prof.sarah.miller@stanford.edu",
+      "fullName": "Prof. Sarah Miller",
+      "role": "educator",
+      "preferredDifficulty": "hard",
+      "preferredLanguage": "English",
+      "themePreference": "dark",
+      "onboardingCompleted": true,
+      "createdAt": "2026-10-18T09:30:00Z"
+    },
+    {
+      "id": "usr-mvnizx6r",
+      "email": "kollavishnu78@gmail.com",
+      "fullName": "Vishnu Kolla",
+      "role": "student",
+      "preferredDifficulty": "mixed",
+      "preferredLanguage": "English",
+      "themePreference": "dark",
+      "onboardingCompleted": true,
+      "createdAt": "2026-10-25T07:48:13.635Z"
+    }
+  ],
+  "materials": [
+    {
+      "id": "mat-bio-01",
+      "userId": "usr-demo-student",
+      "title": "Cellular Respiration and ATP Synthesis in Eukaryotes.pdf",
+      "fileType": "pdf",
+      "fileSize": 48200,
+      "charCount": 1846,
+      "extractedText": "Cellular Respiration and ATP Synthesis in Eukaryotic Cells.\nCellular respiration is a collection of metabolic reactions that convert chemical energy from nutrients into adenosine triphosphate (ATP), releasing waste products. The catabolic pathways involved are glycolysis, pyruvate oxidation, the citric acid cycle (Krebs cycle), and oxidative phosphorylation.\nGlycolysis occurs in the cytosol of eukaryotic cells and does not require molecular oxygen. During glycolysis, a six-carbon glucose molecule is broken down into two three-carbon pyruvate molecules, yielding a net production of 2 ATP molecules via substrate-level phosphorylation and 2 NADH molecules.\nPyruvate is subsequently transported into the mitochondrial matrix. There, each pyruvate is converted into Acetyl-CoA by the pyruvate dehydrogenase complex, releasing carbon dioxide (CO2) and reducing NAD+ to NADH.\nThe Citric Acid Cycle occurs within the mitochondrial matrix. Acetyl-CoA combines with oxaloacetate to form citrate. Over a series of enzymatic steps, two molecules of CO2 are released, yielding 3 NADH, 1 FADH2, and 1 GTP (convertible to ATP) per turn of the cycle. Because one glucose produces two Acetyl-CoA molecules, the cycle turns twice per glucose.\nOxidative phosphorylation occurs at the inner mitochondrial membrane and consists of the electron transport chain (ETC) and chemiosmosis. Electrons from NADH and FADH2 are transferred through complexes I-IV, pumping protons (H+) from the matrix into the intermembrane space. This creates an electrochemical proton gradient known as the proton-motive force. As protons flow back into the matrix through ATP synthase, ADP is phosphorylated into ATP. Under optimal conditions, oxidative phosphorylation yields approximately 26 to 28 ATP, bringing the theoretical total ATP yield per glucose molecule to 30 to 32 ATP.",
+      "chunks": [
+        {
+          "id": "chk-bio-1",
+          "materialId": "mat-bio-01",
+          "chunkIndex": 0,
+          "content": "Cellular Respiration and ATP Synthesis in Eukaryotic Cells.\nCellular respiration is a collection of metabolic reactions that convert chemical energy from nutrients into adenosine triphosphate (ATP), releasing waste products. The catabolic pathways involved are glycolysis, pyruvate oxidation, the citric acid cycle (Krebs cycle), and oxidative phosphorylation.\nGlycolysis occurs in the cytosol of eukaryotic cells and does not require molecular oxygen. During glycolysis, a six-carbon glucose molecule is broken down into two three-carbon pyruvate molecules, yielding a net production of 2 ATP molecules via substrate-level phosphorylation and 2 NADH molecules.\nPyruvate is subsequently transported i",
+          "pageNumber": 1,
+          "wordCount": 110,
+          "keyConcepts": [
+            "Glycolysis",
+            "Substrate-level phosphorylation",
+            "Pyruvate",
+            "Cytosol"
+          ]
+        },
+        {
+          "id": "chk-bio-2",
+          "materialId": "mat-bio-01",
+          "chunkIndex": 1,
+          "content": "nto the mitochondrial matrix. There, each pyruvate is converted into Acetyl-CoA by the pyruvate dehydrogenase complex, releasing carbon dioxide (CO2) and reducing NAD+ to NADH.\nThe Citric Acid Cycle occurs within the mitochondrial matrix. Acetyl-CoA combines with oxaloacetate to form citrate. Over a series of enzymatic steps, two molecules of CO2 are released, yielding 3 NADH, 1 FADH2, and 1 GTP (convertible to ATP) per turn of the cycle. Because one glucose produces two Acetyl-CoA molecules, the cycle turns twice per glucose.\nOxidative phosphorylation occurs at the inner mitochondrial membrane and consists of the electron transport chain (ETC) and chemiosmosis. Electrons from NADH and FADH2 are transferred through complexes I-IV, pumping protons (H+) from the matrix into the intermembrane space. This creates an electrochemical proton gradient known as the proton-motive force. As protons flow back into the matrix through ATP synthase, ADP is phosphorylated into ATP. Under optimal conditions, oxidative phosphorylation yields approximately 26 to 28 ATP, bringing the theoretical total ATP yield per glucose molecule to 30 to 32 ATP.",
+          "pageNumber": 2,
+          "wordCount": 145,
+          "keyConcepts": [
+            "Krebs Cycle",
+            "Oxidative Phosphorylation",
+            "Electron Transport Chain",
+            "ATP Synthase"
+          ]
+        }
+      ],
+      "processingStatus": "ready",
+      "createdAt": "2026-10-21T11:20:00Z"
+    },
+    {
+      "id": "mat-quant-02",
+      "userId": "usr-demo-student",
+      "title": "Quantum Mechanics and Wave-Particle Duality.docx",
+      "fileType": "docx",
+      "fileSize": 34100,
+      "charCount": 1390,
+      "extractedText": "Foundations of Quantum Mechanics and Wave-Particle Duality.\nIn 1900, Max Planck proposed that electromagnetic energy is emitted and absorbed only in discrete packets called quanta, establishing the relation E = h * f, where h is Planck's constant and f is frequency.\nIn 1905, Albert Einstein extended Planck's quantum hypothesis to explain the photoelectric effect, demonstrating that light behaves as localized packets of energy called photons. Electrons are ejected from a metal surface only if the incident light frequency exceeds a threshold frequency, regardless of intensity.\nLouis de Broglie proposed in 1924 that matter also exhibits wave-particle duality. The de Broglie wavelength is given by lambda = h / p, where p is relativistic momentum. This hypothesis was verified experimentally by Davisson and Germer in 1927 via electron diffraction through a nickel crystal lattice.\nWerner Heisenberg formulated the Uncertainty Principle in 1927, which states that one cannot simultaneously determine with arbitrary precision both the position (x) and momentum (p) of a subatomic particle: Delta x * Delta p >= h-bar / 2.\nErwin Schrödinger developed wave mechanics with the Schrödinger wave equation in 1926. The wave function (Psi) describes the quantum state of a physical system. Max Born interpreted |Psi|^2 as the probability density of finding the particle at a specific location.",
+      "chunks": [
+        {
+          "id": "chk-quant-1",
+          "materialId": "mat-quant-02",
+          "chunkIndex": 0,
+          "content": "Foundations of Quantum Mechanics and Wave-Particle Duality.\nIn 1900, Max Planck proposed that electromagnetic energy is emitted and absorbed only in discrete packets called quanta, establishing the relation E = h * f, where h is Planck's constant and f is frequency.\nIn 1905, Albert Einstein extended Planck's quantum hypothesis to explain the photoelectric effect, demonstrating that light behaves as localized packets of energy called photons. Electrons are ejected from a metal surface only if the incident light frequency exceeds a threshold frequency, regardless of intensity.\nLouis de Broglie proposed in 1924 that matter also exhibits wave-particle duality. The de Broglie wavelength is given by lambda = h / p, where p is relativistic momentum. This hypothesis was verified experimentally by Davisson and Germer in 1927 via electron diffraction through a nickel crystal lattice.\nWerner Heisenberg formulated the Uncertainty Principle in 1927, which states that one cannot simultaneously determine with arbitrary precision both the position (x) and momentum (p) of a subatomic particle: Delta x * Delta p >= h-bar / 2.\nErwin Schrödinger developed wave mechanics with the Schrödinger wave equation in 1926. The wave function (Psi) describes the quantum state of a physical system. Max Born interpreted |Psi|^2 as the probability density of finding the particle at a specific location.",
+          "pageNumber": 1,
+          "wordCount": 215,
+          "keyConcepts": [
+            "Planck Quanta",
+            "Photoelectric Effect",
+            "de Broglie Wavelength",
+            "Heisenberg Uncertainty"
+          ]
+        }
+      ],
+      "processingStatus": "ready",
+      "createdAt": "2026-10-22T14:15:00Z"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-mvniq9fc",
+      "userId": "usr-demo-student",
+      "title": "Study Material Quiz",
+      "topic": "Comprehensive Review",
+      "difficulty": "medium",
+      "questionCount": 10,
+      "questionTypes": [
+        "multiple_choice",
+        "true_false"
+      ],
+      "qualityOverallScore": 90.6,
+      "status": "ready",
+      "materialId": "mat-bio-01",
+      "materialTitle": "Cellular Respiration and ATP Synthesis in Eukaryotes.pdf",
+      "questions": [
+        {
+          "id": "q-quiz-mvniq9fc-1",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "Where does glycolysis occur in eukaryotic cells, and what are its oxygen requirements?",
+          "questionType": "multiple_choice",
+          "options": [
+            "In the cytosol, and it does not require molecular oxygen",
+            "In the mitochondrial matrix, and it requires molecular oxygen",
+            "At the inner mitochondrial membrane, and it does not require molecular oxygen",
+            "In the cytosol, and it strictly requires molecular oxygen"
+          ],
+          "correctAnswer": "In the cytosol, and it does not require molecular oxygen",
+          "explanation": "Glycolysis takes place in the cytosol of eukaryotic cells and operates anaerobically, meaning it does not require molecular oxygen.",
+          "sourcePassage": "Glycolysis occurs in the cytosol of eukaryotic cells and does not require molecular oxygen.",
+          "sourceChunkId": "chk-bio-1",
+          "difficulty": "medium",
+          "keyConcept": "Glycolysis Location and Conditions",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-1",
+            "criterionScores": {
+              "relevance": 89,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 93.4,
+            "semanticSimilarity": 0.89,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.89). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-2",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "Glycolysis results in a net production of 4 ATP molecules per glucose molecule via substrate-level phosphorylation.",
+          "questionType": "true_false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswer": "False",
+          "explanation": "Glycolysis produces a net yield of 2 ATP molecules (not 4) via substrate-level phosphorylation, along with 2 NADH and 2 pyruvate molecules.",
+          "sourcePassage": "During glycolysis, a six-carbon glucose molecule is broken down into two three-carbon pyruvate molecules, yielding a net production of 2 ATP molecules via substrate-level phosphorylation and 2 NADH molecules.",
+          "sourceChunkId": "chk-bio-1",
+          "difficulty": "medium",
+          "keyConcept": "Net ATP Yield of Glycolysis",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-2",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.8,
+            "semanticSimilarity": 0.69,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.69). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-3",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "Which enzyme complex is responsible for converting pyruvate into Acetyl-CoA inside the mitochondrial matrix?",
+          "questionType": "multiple_choice",
+          "options": [
+            "Pyruvate dehydrogenase complex",
+            "ATP synthase complex",
+            "Citrate synthase complex",
+            "Oxaloacetate decarboxylase complex"
+          ],
+          "correctAnswer": "Pyruvate dehydrogenase complex",
+          "explanation": "Pyruvate is transported into the mitochondrial matrix where the pyruvate dehydrogenase complex converts it into Acetyl-CoA while releasing CO2 and reducing NAD+ to NADH.",
+          "sourcePassage": "There, each pyruvate is converted into Acetyl-CoA by the pyruvate dehydrogenase complex, releasing carbon dioxide (CO2) and reducing NAD+ to NADH.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Pyruvate Oxidation",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-3",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.6,
+            "semanticSimilarity": 0.6,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.6). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-4",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "In the initial step of the Citric Acid Cycle, Acetyl-CoA combines with which molecule to form citrate?",
+          "questionType": "multiple_choice",
+          "options": [
+            "Oxaloacetate",
+            "Pyruvate",
+            "Malate",
+            "Succinate"
+          ],
+          "correctAnswer": "Oxaloacetate",
+          "explanation": "Within the mitochondrial matrix, the citric acid cycle begins when Acetyl-CoA combines with oxaloacetate to generate citrate.",
+          "sourcePassage": "Acetyl-CoA combines with oxaloacetate to form citrate.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Citric Acid Cycle Entry Step",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-4",
+            "criterionScores": {
+              "relevance": 73,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 90.2,
+            "semanticSimilarity": 0.73,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.73). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-5",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "Because one glucose molecule yields two Acetyl-CoA molecules, the Citric Acid Cycle turns twice per glucose molecule.",
+          "questionType": "true_false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswer": "True",
+          "explanation": "Glycolysis breaks down one glucose molecule into two pyruvates, which form two Acetyl-CoA molecules, requiring the Citric Acid Cycle to turn twice per initial glucose molecule.",
+          "sourcePassage": "Because one glucose produces two Acetyl-CoA molecules, the cycle turns twice per glucose.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Citric Acid Cycle Stoichiometry",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-5",
+            "criterionScores": {
+              "relevance": 90,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 93.8,
+            "semanticSimilarity": 0.9,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.9). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-6",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "What are the exact energy-carrying products generated per single turn of the Citric Acid Cycle?",
+          "questionType": "multiple_choice",
+          "options": [
+            "3 NADH, 1 FADH2, and 1 GTP",
+            "2 NADH, 2 FADH2, and 2 ATP",
+            "3 NADH, 2 FADH2, and 1 GTP",
+            "1 NADH, 3 FADH2, and 2 ATP"
+          ],
+          "correctAnswer": "3 NADH, 1 FADH2, and 1 GTP",
+          "explanation": "Each turn of the citric acid cycle produces 3 NADH, 1 FADH2, and 1 GTP (convertible to ATP), along with the release of two molecules of CO2.",
+          "sourcePassage": "Over a series of enzymatic steps, two molecules of CO2 are released, yielding 3 NADH, 1 FADH2, and 1 GTP (convertible to ATP) per turn of the cycle.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Citric Acid Cycle Products",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-6",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.6,
+            "semanticSimilarity": 0.58,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.58). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-7",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "Where does oxidative phosphorylation specifically take place in eukaryotic cells?",
+          "questionType": "multiple_choice",
+          "options": [
+            "At the inner mitochondrial membrane",
+            "Within the mitochondrial matrix",
+            "In the intermembrane space",
+            "Across the outer mitochondrial membrane"
+          ],
+          "correctAnswer": "At the inner mitochondrial membrane",
+          "explanation": "Oxidative phosphorylation, consisting of the electron transport chain and chemiosmosis, is situated at the inner mitochondrial membrane.",
+          "sourcePassage": "Oxidative phosphorylation occurs at the inner mitochondrial membrane and consists of the electron transport chain (ETC) and chemiosmosis.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Site of Oxidative Phosphorylation",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-7",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.6,
+            "semanticSimilarity": 0.54,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.54). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-8",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "During oxidative phosphorylation, complexes I-IV pump protons from the intermembrane space into the mitochondrial matrix.",
+          "questionType": "true_false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswer": "False",
+          "explanation": "Protons are pumped in the opposite direction: from the mitochondrial matrix into the intermembrane space, which establishes the proton gradient.",
+          "sourcePassage": "Electrons from NADH and FADH2 are transferred through complexes I-IV, pumping protons (H+) from the matrix into the intermembrane space.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Proton Gradient Generation",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-8",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.8,
+            "semanticSimilarity": 0.69,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.69). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-9",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "Under optimal conditions, what is the approximate ATP yield derived exclusively from oxidative phosphorylation?",
+          "questionType": "multiple_choice",
+          "options": [
+            "26 to 28 ATP",
+            "30 to 32 ATP",
+            "2 to 4 ATP",
+            "36 to 38 ATP"
+          ],
+          "correctAnswer": "26 to 28 ATP",
+          "explanation": "Oxidative phosphorylation generates approximately 26 to 28 ATP under optimal conditions, contributing to the theoretical total of 30 to 32 ATP for the entire respiration process.",
+          "sourcePassage": "Under optimal conditions, oxidative phosphorylation yields approximately 26 to 28 ATP, bringing the theoretical total ATP yield per glucose molecule to 30 to 32 ATP.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Oxidative Phosphorylation Yield",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-9",
+            "criterionScores": {
+              "relevance": 73,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 90.2,
+            "semanticSimilarity": 0.73,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.73). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-quiz-mvniq9fc-10",
+          "quizId": "quiz-mvniq9fc",
+          "questionText": "The theoretical total ATP yield per glucose molecule from complete cellular respiration is between 30 and 32 ATP.",
+          "questionType": "true_false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswer": "True",
+          "explanation": "When summing the ATP produced across all catabolic pathways under optimal conditions, the theoretical total yield per glucose molecule is 30 to 32 ATP.",
+          "sourcePassage": "Under optimal conditions, oxidative phosphorylation yields approximately 26 to 28 ATP, bringing the theoretical total ATP yield per glucose molecule to 30 to 32 ATP.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Total Theoretical ATP Yield",
+          "evaluation": {
+            "questionId": "q-quiz-mvniq9fc-10",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.8,
+            "semanticSimilarity": 0.69,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.69). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        }
+      ],
+      "createdAt": "2026-10-25T07:40:42.937Z"
+    },
+    {
+      "id": "quiz-mvnilen1",
+      "userId": "usr-demo-student",
+      "title": "Study Material Quiz",
+      "topic": "Comprehensive Review",
+      "difficulty": "medium",
+      "questionCount": 5,
+      "questionTypes": [
+        "multiple_choice",
+        "true_false",
+        "fill_in_blank",
+        "short_answer"
+      ],
+      "qualityOverallScore": 91.4,
+      "status": "ready",
+      "materialId": "mat-bio-01",
+      "materialTitle": "Cellular Respiration and ATP Synthesis in Eukaryotes.pdf",
+      "questions": [
+        {
+          "id": "q-quiz-mvnilen1-1",
+          "quizId": "quiz-mvnilen1",
+          "questionText": "Where does glycolysis occur within eukaryotic cells, and what is its net direct yield of ATP per glucose molecule?",
+          "questionType": "multiple_choice",
+          "options": [
+            "Cytosol; 2 ATP",
+            "Mitochondrial matrix; 2 ATP",
+            "Inner mitochondrial membrane; 4 ATP",
+            "Cytosol; 30 to 32 ATP"
+          ],
+          "correctAnswer": "Cytosol; 2 ATP",
+          "explanation": "Glycolysis takes place in the cytosol of eukaryotic cells and generates a net yield of 2 ATP via substrate-level phosphorylation.",
+          "sourcePassage": "Glycolysis occurs in the cytosol of eukaryotic cells and does not require molecular oxygen. During glycolysis, a six-carbon glucose molecule is broken down into two three-carbon pyruvate molecules, yielding a net production of 2 ATP molecules via substrate-level phosphorylation and 2 NADH molecules.",
+          "sourceChunkId": "chk-bio-1",
+          "difficulty": "medium",
+          "keyConcept": "Glycolysis location and yield",
+          "evaluation": {
+            "questionId": "q-quiz-mvnilen1-1",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.6,
+            "semanticSimilarity": 0.5,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.5). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvnilen1-2",
+          "quizId": "quiz-mvnilen1",
+          "questionText": "Because a single glucose molecule produces two Acetyl-CoA molecules, the citric acid cycle turns twice per glucose.",
+          "questionType": "true_false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswer": "True",
+          "explanation": "Each glucose molecule breaks down into two pyruvate molecules, forming two Acetyl-CoA molecules; therefore, the citric acid cycle undergoes two full turns per glucose.",
+          "sourcePassage": "Because one glucose produces two Acetyl-CoA molecules, the cycle turns twice per glucose.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Citric Acid Cycle stoichiometry",
+          "evaluation": {
+            "questionId": "q-quiz-mvnilen1-2",
+            "criterionScores": {
+              "relevance": 94,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 94.6,
+            "semanticSimilarity": 0.94,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.94). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-quiz-mvnilen1-3",
+          "quizId": "quiz-mvnilen1",
+          "questionText": "The pumping of protons from the mitochondrial matrix into the intermembrane space establishes an electrochemical gradient termed the _____ force.",
+          "questionType": "fill_in_blank",
+          "options": [],
+          "correctAnswer": "proton-motive",
+          "explanation": "Electron transport chain complexes pump protons across the inner mitochondrial membrane, establishing an electrochemical gradient called the proton-motive force.",
+          "sourcePassage": "This creates an electrochemical proton gradient known as the proton-motive force.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Proton-motive force",
+          "evaluation": {
+            "questionId": "q-quiz-mvnilen1-3",
+            "criterionScores": {
+              "relevance": 70,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 89.8,
+            "semanticSimilarity": 0.61,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.61). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "good"
+          }
+        },
+        {
+          "id": "q-quiz-mvnilen1-4",
+          "quizId": "quiz-mvnilen1",
+          "questionText": "What occurs during pyruvate oxidation inside the mitochondrial matrix?",
+          "questionType": "multiple_choice",
+          "options": [
+            "Each pyruvate is converted into Acetyl-CoA, releasing CO2 and reducing NAD+ to NADH",
+            "Pyruvate directly condenses with oxaloacetate to generate citrate and FADH2",
+            "Each pyruvate is phosphorylated into ATP via substrate-level phosphorylation",
+            "Pyruvate is reduced to form glucose in an oxygen-dependent reaction"
+          ],
+          "correctAnswer": "Each pyruvate is converted into Acetyl-CoA, releasing CO2 and reducing NAD+ to NADH",
+          "explanation": "The pyruvate dehydrogenase complex converts pyruvate into Acetyl-CoA within the matrix, releasing CO2 and producing NADH.",
+          "sourcePassage": "There, each pyruvate is converted into Acetyl-CoA by the pyruvate dehydrogenase complex, releasing carbon dioxide (CO2) and reducing NAD+ to NADH.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Pyruvate oxidation",
+          "evaluation": {
+            "questionId": "q-quiz-mvnilen1-4",
+            "criterionScores": {
+              "relevance": 82,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 92,
+            "semanticSimilarity": 0.82,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.82). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-quiz-mvnilen1-5",
+          "quizId": "quiz-mvnilen1",
+          "questionText": "How does ATP synthase produce ATP during chemiosmosis in eukaryotic cells?",
+          "questionType": "short_answer",
+          "options": [],
+          "correctAnswer": "ATP synthase phosphorylates ADP into ATP as protons flow back down their electrochemical gradient from the intermembrane space into the mitochondrial matrix.",
+          "explanation": "The return flow of protons through ATP synthase down the electrochemical gradient powers the phosphorylation of ADP to generate ATP.",
+          "sourcePassage": "As protons flow back into the matrix through ATP synthase, ADP is phosphorylated into ATP.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Chemiosmosis and ATP synthase",
+          "evaluation": {
+            "questionId": "q-quiz-mvnilen1-5",
+            "criterionScores": {
+              "relevance": 76,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 94,
+              "grammar": 97,
+              "diversity": 91
+            },
+            "weightedScore": 91,
+            "semanticSimilarity": 0.76,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Evaluated across 9 criteria with semantic similarity (0.76). Answer is strictly anchored to source text.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        }
+      ],
+      "createdAt": "2026-10-25T07:36:56.415Z"
+    },
+    {
+      "id": "quiz-bio-mastery",
+      "userId": "usr-demo-student",
+      "title": "Cellular Respiration & Bioenergetics Mastery",
+      "topic": "Cellular Respiration",
+      "difficulty": "mixed",
+      "questionCount": 5,
+      "questionTypes": [
+        "multiple_choice",
+        "true_false",
+        "fill_in_blank",
+        "short_answer"
+      ],
+      "qualityOverallScore": 94.5,
+      "status": "ready",
+      "materialId": "mat-bio-01",
+      "materialTitle": "Cellular Respiration and ATP Synthesis in Eukaryotes.pdf",
+      "createdAt": "2026-10-22T16:00:00Z",
+      "questions": [
+        {
+          "id": "q-bio-1",
+          "quizId": "quiz-bio-mastery",
+          "questionText": "Where does glycolysis take place within eukaryotic cells?",
+          "questionType": "multiple_choice",
+          "options": [
+            "Mitochondrial matrix",
+            "Cytosol",
+            "Inner mitochondrial membrane",
+            "Intermembrane space"
+          ],
+          "correctAnswer": "Cytosol",
+          "explanation": "Glycolysis occurs exclusively in the cytosol of eukaryotic cells and does not require oxygen.",
+          "sourcePassage": "Glycolysis occurs in the cytosol of eukaryotic cells and does not require molecular oxygen.",
+          "sourceChunkId": "chk-bio-1",
+          "difficulty": "easy",
+          "keyConcept": "Glycolysis Localization",
+          "evaluation": {
+            "questionId": "q-bio-1",
+            "criterionScores": {
+              "relevance": 98,
+              "answerCorrectness": 100,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 94,
+              "difficultyAlignment": 92,
+              "distractorQuality": 90,
+              "grammar": 98,
+              "diversity": 92
+            },
+            "weightedScore": 96.2,
+            "semanticSimilarity": 0.94,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "High factual precision grounded explicitly in paragraph 2. Distractors are legitimate mitochondrial compartments.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-bio-2",
+          "quizId": "quiz-bio-mastery",
+          "questionText": "Substrate-level phosphorylation during glycolysis yields a net gain of 4 ATP molecules per glucose molecule.",
+          "questionType": "true_false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswer": "False",
+          "explanation": "Glycolysis produces a gross of 4 ATP, but consumes 2 ATP in the investment phase, resulting in a net yield of 2 ATP per glucose.",
+          "sourcePassage": "...yielding a net production of 2 ATP molecules via substrate-level phosphorylation and 2 NADH molecules.",
+          "sourceChunkId": "chk-bio-1",
+          "difficulty": "medium",
+          "keyConcept": "Glycolysis ATP Balance",
+          "evaluation": {
+            "questionId": "q-bio-2",
+            "criterionScores": {
+              "relevance": 96,
+              "answerCorrectness": 100,
+              "sourceFaithfulness": 98,
+              "clarity": 94,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 92,
+              "grammar": 96,
+              "diversity": 90
+            },
+            "weightedScore": 95,
+            "semanticSimilarity": 0.91,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Tests an essential distinction between net and gross ATP generation with clear Boolean truth assignment.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-bio-3",
+          "quizId": "quiz-bio-mastery",
+          "questionText": "In the Krebs cycle, Acetyl-CoA combines with _____ to form citrate.",
+          "questionType": "fill_in_blank",
+          "options": [],
+          "correctAnswer": "oxaloacetate",
+          "explanation": "The initial step of the Krebs cycle combines the two-carbon Acetyl-CoA with four-carbon oxaloacetate to synthesize six-carbon citrate.",
+          "sourcePassage": "The Citric Acid Cycle occurs within the mitochondrial matrix. Acetyl-CoA combines with oxaloacetate to form citrate.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Citric Acid Cycle Entry",
+          "evaluation": {
+            "questionId": "q-bio-3",
+            "criterionScores": {
+              "relevance": 95,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 97,
+              "clarity": 94,
+              "completeness": 92,
+              "difficultyAlignment": 90,
+              "distractorQuality": 90,
+              "grammar": 95,
+              "diversity": 90
+            },
+            "weightedScore": 94.2,
+            "semanticSimilarity": 0.89,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Clear fill-in-the-blank requiring specific biochemical substrate nomenclature directly verifiable in source.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-bio-4",
+          "quizId": "quiz-bio-mastery",
+          "questionText": "Explain how the proton-motive force drives the synthesis of ATP during chemiosmosis.",
+          "questionType": "short_answer",
+          "options": [],
+          "correctAnswer": "Protons pumped into the intermembrane space flow down their electrochemical gradient back into the matrix through ATP synthase, rotating the enzyme catalytic subunits to phosphorylate ADP into ATP.",
+          "explanation": "Chemiosmosis harnesses the potential energy stored in the transmembrane H+ gradient generated by the electron transport chain to power ATP synthase.",
+          "sourcePassage": "This creates an electrochemical proton gradient known as the proton-motive force. As protons flow back into the matrix through ATP synthase, ADP is phosphorylated into ATP.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "hard",
+          "keyConcept": "Chemiosmotic Coupling",
+          "evaluation": {
+            "questionId": "q-bio-4",
+            "criterionScores": {
+              "relevance": 97,
+              "answerCorrectness": 96,
+              "sourceFaithfulness": 95,
+              "clarity": 92,
+              "completeness": 94,
+              "difficultyAlignment": 95,
+              "distractorQuality": 90,
+              "grammar": 96,
+              "diversity": 93
+            },
+            "weightedScore": 94.9,
+            "semanticSimilarity": 0.92,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "Demands deep conceptual synthesis of electrochemistry and rotary enzyme dynamics.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        },
+        {
+          "id": "q-bio-5",
+          "quizId": "quiz-bio-mastery",
+          "questionText": "What is the theoretical maximum net ATP yield per glucose molecule under optimal eukaryotic cellular respiration?",
+          "questionType": "multiple_choice",
+          "options": [
+            "2 to 4 ATP",
+            "12 to 14 ATP",
+            "30 to 32 ATP",
+            "48 to 50 ATP"
+          ],
+          "correctAnswer": "30 to 32 ATP",
+          "explanation": "Including 2 from glycolysis, 2 GTP/ATP from the Krebs cycle, and 26-28 from oxidative phosphorylation, the theoretical maximum is 30 to 32 ATP.",
+          "sourcePassage": "...bringing the theoretical total ATP yield per glucose molecule to 30 to 32 ATP.",
+          "sourceChunkId": "chk-bio-2",
+          "difficulty": "medium",
+          "keyConcept": "Net ATP Stoichiometry",
+          "evaluation": {
+            "questionId": "q-bio-5",
+            "criterionScores": {
+              "relevance": 96,
+              "answerCorrectness": 98,
+              "sourceFaithfulness": 96,
+              "clarity": 95,
+              "completeness": 94,
+              "difficultyAlignment": 90,
+              "distractorQuality": 88,
+              "grammar": 96,
+              "diversity": 90
+            },
+            "weightedScore": 94.4,
+            "semanticSimilarity": 0.93,
+            "criticalFlags": {
+              "hasUnsupportedClaim": false,
+              "hasIncorrectAnswer": false,
+              "hasAmbiguousOptions": false,
+              "isUnanswerable": false,
+              "notes": []
+            },
+            "evaluatorExplanation": "High quality question with unambiguous, grounded numbers.",
+            "modelIdentifier": "gemini-3.8-flash",
+            "status": "excellent"
+          }
+        }
+      ]
+    }
+  ],
+  "attempts": [
+    {
+      "id": "att-bio-1",
+      "quizId": "quiz-bio-mastery",
+      "userId": "usr-demo-student",
+      "score": 4,
+      "maxScore": 5,
+      "percentage": 80,
+      "correctCount": 4,
+      "incorrectCount": 1,
+      "unansweredCount": 0,
+      "timeSpentSeconds": 142,
+      "answers": {
+        "q-bio-1": "Cytosol",
+        "q-bio-2": "False",
+        "q-bio-3": "oxaloacetate",
+        "q-bio-4": "Protons flow through ATP synthase down the electrochemical gradient to convert ADP to ATP.",
+        "q-bio-5": "12 to 14 ATP"
+      },
+      "details": [
+        {
+          "questionId": "q-bio-1",
+          "userAnswer": "Cytosol",
+          "isCorrect": true,
+          "feedback": "Correct! Glycolysis occurs in cytosol."
+        },
+        {
+          "questionId": "q-bio-2",
+          "userAnswer": "False",
+          "isCorrect": true,
+          "feedback": "Correct! Net yield is 2 ATP, not 4."
+        },
+        {
+          "questionId": "q-bio-3",
+          "userAnswer": "oxaloacetate",
+          "isCorrect": true,
+          "feedback": "Correct! Oxaloacetate merges with Acetyl-CoA."
+        },
+        {
+          "questionId": "q-bio-4",
+          "userAnswer": "Protons flow through ATP synthase down the electrochemical gradient to convert ADP to ATP.",
+          "isCorrect": true,
+          "feedback": "Accurately explains the chemiosmotic flow."
+        },
+        {
+          "questionId": "q-bio-5",
+          "userAnswer": "12 to 14 ATP",
+          "isCorrect": false,
+          "feedback": "Incorrect. The theoretical yield is 30 to 32 ATP."
+        }
+      ],
+      "completedAt": "2026-10-23T14:32:00Z"
+    }
+  ],
+  "savedQuestions": []
+}

@@ -1,0 +1,1587 @@
+# PROJECT TITLE
+
+**QuizGenius AI — Generative AI for Automatic Quiz Generation from Study Material with Quality Evaluation Using LLMs and Transformer Models**
+
+## 1. ROLE AND OBJECTIVE
+
+Act as a senior full-stack developer, AI/ML engineer, UI/UX designer, database architect, cybersecurity engineer, and animation specialist.
+
+Build a complete, production-style, premium web application called **QuizGenius AI**.
+
+The platform uses Generative AI, Large Language Models (LLMs), Natural Language Processing (NLP), and Transformer-based models to generate educational quizzes automatically from uploaded study materials.
+
+The platform must provide a beautiful user interface, sophisticated animations, secure authentication, personalized dashboards, interactive quizzes, AI-based quality evaluation, performance analytics, and a complete user account system.
+
+Do not create just a landing page or static UI prototype. Build a functional application with a working frontend, backend, database, authentication system, AI integration, and all major features.
+
+Make the application visually impressive, intuitive, responsive, accessible, and suitable for a final-year academic project or a startup-style product demonstration.
+
+---
+
+# 2. TECHNOLOGY STACK
+
+Use the following technology stack.
+
+### Frontend
+
+* Next.js with App Router.
+* React.
+* TypeScript.
+* Tailwind CSS.
+* Framer Motion or Motion for React for animations.
+* Lucide React for icons.
+* Recharts for analytics and performance graphs.
+* React Hook Form for form handling.
+* Zod for frontend and backend schema validation.
+
+### Backend
+
+* Python.
+* FastAPI.
+* Pydantic for request and response validation.
+* REST APIs for communication between the frontend and backend.
+* Background processing for long-running document analysis and quiz generation tasks where appropriate.
+
+### Database and Authentication
+
+* Supabase PostgreSQL for database storage.
+* Supabase Auth for user authentication.
+* Supabase Row Level Security (RLS) for protecting user-specific records.
+* Supabase Storage for uploaded documents when needed.
+
+### AI and Machine Learning
+
+* An instruction-following LLM through a configurable API or a locally hosted model.
+* Hugging Face Transformers for Transformer model integration.
+* Sentence Transformers for semantic similarity.
+* An LLM-as-a-judge evaluation pipeline.
+* Rule-based validation for question structure and correctness checks.
+* PyMuPDF for PDF extraction.
+* python-docx for DOCX extraction.
+* Pandas and NumPy for analytics.
+
+### Deployment
+
+* Frontend: Vercel or another compatible hosting platform.
+* Backend: a Python-compatible hosting service.
+* Database and authentication: Supabase.
+
+Keep the LLM provider configurable so the application can support different models without rewriting the entire system.
+
+Do not hard-code API keys, passwords, tokens, or other secrets.
+
+---
+
+# 3. PREMIUM DESIGN SYSTEM
+
+Create a polished, premium SaaS interface inspired by modern AI products, productivity dashboards, and sophisticated educational platforms.
+
+The website must look professionally designed rather than like a generic AI-generated template.
+
+## Visual Direction
+
+Use a premium dark-and-light design system.
+
+### Main Theme
+
+* Deep midnight navy.
+* Soft white and cool gray surfaces.
+* Electric violet accents.
+* Cyan highlights for AI-related elements.
+* Subtle gradients.
+* Carefully controlled glassmorphism.
+* Soft shadows and layered cards.
+* Thin, elegant borders.
+* Generous spacing.
+* Rounded cards and buttons.
+* Clear typography hierarchy.
+
+Suggested colors:
+
+* Primary background: #0B1020.
+* Secondary background: #11182B.
+* Primary accent: #8B5CF6.
+* Secondary accent: #22D3EE.
+* Main light background: #F8FAFC.
+* Primary text on dark backgrounds: #F8FAFC.
+* Secondary text on dark backgrounds: #A7B0C0.
+* Success: #22C55E.
+* Warning: #F59E0B.
+* Error: #EF4444.
+
+Use these colors as design tokens and maintain contrast and readability.
+
+Implement a consistent typography system using a modern font such as Inter or Geist.
+
+Provide a functional light/dark theme toggle. Persist the user's preference.
+
+Avoid excessive gradients, unnecessary neon effects, visual clutter, and animations that interfere with readability.
+
+## Premium UI Requirements
+
+Every page must include:
+
+* Consistent spacing and alignment.
+* Responsive layouts.
+* Refined hover states.
+* Smooth transitions.
+* Loading skeletons.
+* Helpful empty states.
+* Error and success feedback.
+* Accessible focus indicators.
+* Clear primary and secondary actions.
+* Professional icons and illustrations.
+
+Use custom-designed UI components rather than relying entirely on default component styles.
+
+---
+
+# 4. ADVANCED ANIMATION REQUIREMENTS
+
+Animations are a major part of the user experience.
+
+Use Framer Motion or Motion for React to implement smooth, high-quality interactions.
+
+### Landing Page Animations
+
+* Animated hero section on initial page load.
+* Staggered entrance animations for headings, paragraphs, and buttons.
+* Floating decorative particles or abstract AI-inspired shapes.
+* Slowly moving gradient backgrounds.
+* Subtle parallax effects.
+* Animated glowing accents.
+* Floating dashboard preview cards.
+* Scroll-triggered reveal animations.
+* Smooth transitions between sections.
+* Interactive feature cards with subtle tilt or elevation effects.
+
+### Button Animations
+
+* Smooth hover scaling.
+* Animated gradient or border transitions.
+* Subtle press feedback.
+* Loading spinners during requests.
+* Success feedback after important actions.
+
+### Card Animations
+
+* Fade-in and upward motion when entering the viewport.
+* Slight elevation on hover.
+* Smooth border and shadow transitions.
+* Staggered entrance animations in grids.
+* Subtle animated indicators for AI processing.
+
+### Authentication Page Animations
+
+* Smooth transitions between login and registration pages.
+* Animated form fields.
+* Floating labels where appropriate.
+* Password visibility toggle.
+* Animated validation messages.
+* Password strength indicator.
+* Smooth success and error notifications.
+
+### Dashboard Animations
+
+* Staggered card loading.
+* Animated count-up statistics.
+* Smooth chart transitions.
+* Progress bars that animate when values change.
+* Hover interactions on recent quiz cards.
+* Smooth sidebar expansion and collapse.
+
+### AI Generation Animations
+
+Create a dedicated, premium AI processing experience.
+
+Show a progress interface with these stages:
+
+1. Uploading study material.
+2. Extracting document text.
+3. Identifying important concepts.
+4. Generating quiz questions.
+5. Evaluating question quality.
+6. Checking duplicates and answer support.
+7. Preparing the final quiz.
+
+Display the actual processing stage returned by the backend.
+
+Use animated progress indicators, subtle pulsing effects, and clear status messages.
+
+Do not fake a completed result or display fabricated progress. If exact progress is unavailable, show an indeterminate loading state or clearly labeled processing stages.
+
+### Quiz Animations
+
+* Smooth question transitions.
+* Animated answer selection.
+* Progress indicators.
+* Subtle success or error feedback.
+* Animated score reveal.
+* Performance chart transitions.
+* A restrained celebration animation when a user completes a quiz.
+
+Respect the operating system's reduced-motion preference.
+
+Keep animations smooth and efficient. Avoid excessive movement, long delays, and distracting background effects.
+
+---
+
+# 5. COMPLETE WEBSITE PAGES
+
+Build every page listed below.
+
+## PAGE 1: Premium Landing Page
+
+Create a visually impressive public homepage.
+
+### Navigation Bar
+
+Include:
+
+* QuizGenius AI logo.
+* Home.
+* Features.
+* How It Works.
+* AI Technology.
+* Pricing.
+* FAQ.
+* Sign In.
+* Get Started Free.
+
+Make the navigation responsive, with a mobile menu.
+
+Keep the header fixed or sticky when appropriate, with a subtle background transition when scrolling.
+
+### Hero Section
+
+Use the headline:
+
+**"Turn Your Study Material Into Intelligent Quizzes."**
+
+Supporting description:
+
+"Upload your notes, textbooks, or study guides and let AI transform them into personalized quizzes with intelligent quality evaluation, instant feedback, and performance insights."
+
+Primary CTA:
+"Generate Your First Quiz"
+
+Secondary CTA:
+"Explore Features"
+
+Include a premium visual preview of the quiz-generation dashboard.
+
+The preview should show:
+
+* A study material upload card.
+* An AI-generated question.
+* A quality score indicator.
+* A quiz progress card.
+* A small performance chart.
+
+Animate the preview with subtle floating effects and staggered entrance transitions.
+
+Include a concise trust message explaining that questions are checked against uploaded study material.
+
+Do not invent user counts, testimonials, institutional partnerships, awards, or performance claims.
+
+### Feature Section
+
+Create premium feature cards for:
+
+1. AI-Powered Quiz Generation.
+2. Smart Question Quality Evaluation.
+3. Transformer-Based Semantic Analysis.
+4. Multiple Question Types.
+5. Personalized Learning Analytics.
+6. Source-Grounded Answers.
+7. Instant Explanations.
+8. Quiz History and Reports.
+
+Each card should have a unique icon, short description, and polished hover animation.
+
+### How It Works Section
+
+Present a visually engaging four-step process:
+
+Step 1: Upload your study material.
+
+Step 2: Let AI understand your content.
+
+Step 3: Generate and evaluate your quiz.
+
+Step 4: Practice, review, and improve.
+
+Use animated connecting lines or progress indicators where appropriate.
+
+### AI Technology Section
+
+Explain how the platform combines:
+
+* Large Language Models.
+* Transformer embeddings.
+* Semantic similarity.
+* Source-grounded answer validation.
+* Automated quality scoring.
+
+Use an attractive architecture illustration or diagram.
+
+Ensure the diagram accurately represents the implemented architecture.
+
+### Additional Sections
+
+* Benefits for students.
+* Benefits for teachers.
+* Question types.
+* Sample quiz preview.
+* Frequently asked questions.
+* Final call-to-action.
+* Professional footer.
+
+### Landing Page Behavior
+
+* "Sign In" opens the login page.
+* "Get Started Free" opens registration.
+* "Generate Your First Quiz" opens registration for unauthenticated users and the quiz dashboard for authenticated users.
+* All navigation links must work.
+
+---
+
+# 6. USER AUTHENTICATION SYSTEM
+
+Implement a complete email-and-password authentication system using Supabase Auth.
+
+The authentication system must be functional, secure, and connected to the database.
+
+## PAGE 2: User Registration
+
+Create a premium sign-up page.
+
+### Form Fields
+
+* Full name.
+* Email address.
+* Password.
+* Confirm password.
+* Terms and Privacy Policy acceptance checkbox.
+
+### Registration Features
+
+* Validate the email address.
+* Enforce a configurable minimum password length.
+* Display password strength.
+* Include a show/hide password button.
+* Check that passwords match.
+* Display field-specific validation messages.
+* Disable duplicate submissions while processing.
+* Show loading feedback.
+* Handle authentication errors gracefully.
+* Prevent accidental duplicate account creation.
+
+Use Supabase Auth to register the user.
+
+After successful registration:
+
+* Trigger email verification if email confirmation is enabled.
+* Display a verification-pending page.
+* Provide a resend-verification-email option with appropriate rate limiting.
+* Allow access to protected features only when the configured verification policy is satisfied.
+* Redirect verified and authenticated users to the onboarding page or dashboard.
+
+Do not store passwords in plain text or in a custom users table.
+
+Never create a fake registration flow that simply redirects without creating an actual account.
+
+### Sign-Up Page Design
+
+Use a split-screen layout on desktop.
+
+Left panel:
+
+* Brand logo.
+* Main headline.
+* Short product description.
+* Animated abstract AI illustration.
+* Small feature highlights.
+
+Right panel:
+
+* Registration form.
+* Form validation.
+* Sign-up button.
+* Link to sign in.
+* Privacy and terms links.
+
+On mobile, use a single-column layout.
+
+---
+
+## PAGE 3: User Login
+
+Create a polished login page.
+
+### Form Fields
+
+* Email address.
+* Password.
+* Remember-me option, if supported by the chosen session implementation.
+* Forgot password link.
+
+### Login Features
+
+* Validate form inputs.
+* Authenticate through Supabase Auth.
+* Display appropriate error messages.
+* Show a loading state.
+* Prevent repeated submissions while processing.
+* Redirect authenticated users to the dashboard.
+* Maintain sessions securely.
+* Prevent unauthenticated users from accessing protected pages.
+* Support sign-out.
+* Handle expired sessions.
+* Support secure session refresh.
+
+Do not expose whether an arbitrary email address has an account through unnecessarily detailed error messages.
+
+### Optional Authentication
+
+Include Google sign-in only if it can be properly configured with OAuth credentials and redirect URLs.
+
+If OAuth credentials are unavailable, keep the feature disabled rather than presenting a nonfunctional button.
+
+### Login Page Links
+
+* Create an account.
+* Forgot password.
+* Privacy Policy.
+* Terms of Service.
+
+---
+
+## PAGE 4: Forgot Password
+
+Create a password recovery page.
+
+The user enters their registered email address and requests a password-reset email.
+
+Requirements:
+
+* Use the official Supabase password recovery flow.
+* Display a generic confirmation message that does not reveal whether the email is registered.
+* Handle email delivery failures appropriately.
+* Apply rate limiting where supported.
+* Provide a link back to login.
+
+## PAGE 5: Reset Password
+
+Allow users to set a new password using a valid recovery session.
+
+Include:
+
+* New password.
+* Confirm new password.
+* Password strength feedback.
+* Show/hide password controls.
+* Password validation.
+* Success confirmation.
+* Redirect to login after successful recovery.
+
+Reject expired or invalid recovery sessions.
+
+## PAGE 6: Email Verification
+
+Create a dedicated email verification experience.
+
+Include:
+
+* Verification status.
+* Resend email option.
+* Refresh verification status.
+* Clear instructions for checking the inbox.
+* Return-to-login option.
+
+Handle expired verification links and authentication errors gracefully.
+
+## PAGE 7: User Profile and Account Settings
+
+Allow authenticated users to:
+
+* View and update their full name.
+* View their account email.
+* Change their password through a secure supported flow.
+* Configure light or dark theme.
+* Configure quiz preferences.
+* View account creation information where available.
+* Sign out.
+* Request account deletion.
+
+Implement account deletion securely through a trusted backend endpoint using the Supabase service role key only on the server.
+
+Require appropriate confirmation before destructive actions.
+
+---
+
+# 7. ONBOARDING EXPERIENCE
+
+After a user signs in for the first time, show a polished onboarding flow.
+
+### Step 1: Welcome
+
+"Welcome to QuizGenius AI."
+
+Explain how the application transforms study material into intelligent quizzes.
+
+### Step 2: Learning Preferences
+
+Ask the user to select:
+
+* Student or teacher.
+* Preferred language.
+* Preferred difficulty.
+* Favorite subject categories.
+
+Make these preferences optional where appropriate.
+
+### Step 3: Choose a Starting Action
+
+Offer three options:
+
+* Upload study material.
+* Try a sample quiz.
+* Explore the dashboard.
+
+Store appropriate preferences in the user's profile.
+
+Allow users to skip onboarding and return to it later if desired.
+
+Use smooth transitions and a progress indicator.
+
+---
+
+# 8. AUTHENTICATED USER DASHBOARD
+
+## PAGE 8: Main Dashboard
+
+Create a premium dashboard with a collapsible sidebar.
+
+### Sidebar Navigation
+
+* Overview.
+* Generate Quiz.
+* My Quizzes.
+* Study Materials.
+* Performance Analytics.
+* Saved Questions.
+* Profile Settings.
+* Help and Support.
+* Sign Out.
+
+### Dashboard Header
+
+Include:
+
+* Personalized greeting.
+* Search field.
+* Notification area if notifications are implemented.
+* Theme toggle.
+* Profile avatar and menu.
+
+### Summary Cards
+
+Display real statistics from the database:
+
+* Total quizzes created.
+* Total questions answered.
+* Average quiz score.
+* Study materials uploaded.
+
+Animate the numbers when they first appear.
+
+Show empty states for new users instead of fabricated statistics.
+
+### Recent Activity
+
+Show:
+
+* Recent quizzes.
+* Quiz completion dates.
+* Quiz scores.
+* Number of questions.
+* Difficulty level.
+* Links to view results.
+
+### Quick Actions
+
+Provide buttons for:
+
+* Generate New Quiz.
+* Upload Study Material.
+* Continue an Unfinished Quiz.
+* Review Past Results.
+
+### Performance Overview
+
+Use charts to display:
+
+* Score trends over time.
+* Performance by subject.
+* Correct versus incorrect answers.
+* Difficulty-level performance.
+
+Calculate chart values from actual stored results.
+
+### First-Time User Experience
+
+If the user has no quizzes, show an attractive empty state with an animated upload illustration and a prominent "Create Your First Quiz" button.
+
+---
+
+# 9. STUDY MATERIAL UPLOAD
+
+## PAGE 9: Upload Study Material
+
+Create an interactive upload interface.
+
+### Supported Formats
+
+* PDF.
+* DOCX.
+* TXT.
+* Pasted text.
+
+### Upload Features
+
+* Drag-and-drop upload.
+* Browse files button.
+* File type validation.
+* File size limits configurable on the server.
+* Upload progress where available.
+* Document name display.
+* File size display.
+* Upload cancellation where supported.
+* Delete uploaded material.
+* Text extraction preview.
+* Document processing status.
+
+### Document Processing
+
+The backend must:
+
+1. Validate the uploaded file.
+2. Extract text.
+3. Detect empty or unreadable documents.
+4. Normalize whitespace.
+5. Preserve useful headings and paragraph structure.
+6. Divide long documents into manageable chunks.
+7. Associate extracted passages with their document and page numbers when available.
+8. Save metadata and extracted text according to the configured storage policy.
+
+Handle scanned PDFs with an optional OCR integration. Clearly report when OCR is unavailable or required.
+
+Do not silently accept documents that contain no extractable text.
+
+### Security
+
+* Validate file type using more than just the filename.
+* Apply upload size limits.
+* Use generated storage filenames.
+* Protect stored files with appropriate access controls.
+* Prevent one user from accessing another user's documents.
+* Never expose private document storage through public URLs unless explicitly intended.
+
+---
+
+# 10. QUIZ CONFIGURATION
+
+## PAGE 10: Generate a Quiz
+
+Create a premium multi-step quiz creation interface.
+
+### Step 1: Select Source
+
+Allow the user to:
+
+* Select an uploaded study material.
+* Upload a new document.
+* Paste text.
+
+### Step 2: Select Quiz Settings
+
+Number of questions:
+
+* 5.
+* 10.
+* 15.
+* 20.
+* Custom amount within a configurable limit.
+
+Question types:
+
+* Multiple-choice questions.
+* True/false.
+* Short-answer.
+* Fill-in-the-blank.
+
+Difficulty:
+
+* Easy.
+* Medium.
+* Hard.
+* Mixed.
+
+Additional settings:
+
+* Select a chapter or topic.
+* Choose the preferred language.
+* Include explanations.
+* Include source references.
+* Randomize question order.
+* Generate a balanced mixture of concepts.
+
+### Step 3: Review Settings
+
+Display a summary of the selected options.
+
+### Step 4: Generate Quiz
+
+Call the backend and display real processing status.
+
+Disable repeated submission while the same generation task is running.
+
+Save quiz-generation parameters and associate the resulting quiz with the authenticated user.
+
+---
+
+# 11. AI-POWERED QUESTION GENERATION ENGINE
+
+Implement the question-generation logic in the Python backend.
+
+### Input
+
+* Extracted study material.
+* Selected topic.
+* Question count.
+* Question types.
+* Difficulty.
+* Language.
+* Additional generation settings.
+
+### Processing Pipeline
+
+1. Retrieve relevant document chunks.
+2. Identify key concepts and important facts.
+3. Prepare context for the LLM.
+4. Generate structured questions.
+5. Generate answer options and correct answers.
+6. Generate explanations.
+7. Associate questions with supporting source passages.
+8. Validate the generated structure.
+9. Send questions to the quality evaluation pipeline.
+10. Save accepted questions and review flags.
+
+### Question Quality Requirements
+
+Questions must:
+
+* Be relevant to the supplied content.
+* Be understandable and grammatically correct.
+* Test meaningful learning objectives.
+* Avoid repeated questions.
+* Avoid unsupported facts.
+* Have defensible answers.
+* Use plausible distractors.
+* Match the requested difficulty.
+* Avoid giving away the answer through option wording.
+
+For multiple-choice questions, enforce exactly one correct option unless the user explicitly selects a supported multiple-answer format.
+
+For true/false questions, store a clear truth value.
+
+For short-answer questions, define an answer reference and an appropriate grading strategy.
+
+For fill-in-the-blank questions, make sure the missing term is recoverable from the provided context.
+
+Use structured JSON output with schema validation.
+
+If generated output is invalid, attempt a limited repair or regeneration.
+
+Do not assume every generated question is correct.
+
+---
+
+# 12. LLM AND TRANSFORMER QUALITY EVALUATION
+
+## PAGE 11: Quality Evaluation Dashboard
+
+Create a dedicated interface showing the quality of each generated question.
+
+### Evaluation Criteria
+
+Evaluate:
+
+1. Relevance to source material.
+2. Answer correctness.
+3. Source faithfulness.
+4. Clarity.
+5. Completeness.
+6. Answerability.
+7. Difficulty alignment.
+8. Grammar.
+9. Distractor quality.
+10. Duplicate or redundant content.
+
+### Transformer-Based Analysis
+
+Use a Sentence Transformer model to generate embeddings for:
+
+* Source passages.
+* Questions.
+* Answers.
+* Other questions in the quiz.
+
+Calculate semantic similarity to:
+
+* Find supporting passages.
+* Detect potential duplicates.
+* Identify questions that may be unrelated to the selected source.
+
+Use configurable similarity thresholds, tested against representative study materials.
+
+Semantic similarity is supporting evidence, not proof of correctness.
+
+### LLM-as-a-Judge Evaluation
+
+Provide the evaluator with:
+
+* The original source passage.
+* The generated question.
+* All answer options.
+* The proposed correct answer.
+* The explanation.
+* The target difficulty.
+
+Ask the evaluator to return structured scores and evidence.
+
+Require the evaluator to identify unsupported claims and explain why a question fails a criterion.
+
+Use an independent validation step for important answer-correctness checks where feasible.
+
+### Weighted Quality Score
+
+Use these configurable starting weights:
+
+| Criterion                      | Weight |
+| ------------------------------ | -----: |
+| Relevance                      |    20% |
+| Answer correctness             |    20% |
+| Source faithfulness            |    15% |
+| Clarity                        |    10% |
+| Completeness and answerability |    10% |
+| Difficulty alignment           |    10% |
+| Distractor quality             |     5% |
+| Grammar                        |     5% |
+| Diversity and redundancy       |     5% |
+
+Calculate a weighted score from 0 to 100.
+
+Suggested initial interpretation:
+
+* 90–100: Excellent.
+* 80–89: Good.
+* 70–79: Needs review.
+* Below 70: Regenerate or manually review.
+
+These thresholds are configurable and should be validated.
+
+### Critical Validation Rules
+
+A high weighted score must not override:
+
+* An incorrect answer.
+* An unsupported factual claim.
+* Multiple defensible correct options in a single-answer MCQ.
+* A question that cannot be answered from the supplied material when source-grounded answers are required.
+
+Flag critical failures separately.
+
+### Evaluation Interface
+
+For each question, display:
+
+* Quality score.
+* Individual criterion scores.
+* Quality badge.
+* Supporting source passage.
+* Correct answer.
+* Evaluation explanation.
+* Identified problems.
+* Regenerate button.
+* Approve or reject controls.
+
+Distinguish automated quality estimates from verified correctness.
+
+---
+
+# 13. AUTOMATIC QUESTION REFINEMENT
+
+Implement a bounded refinement workflow.
+
+When a question fails evaluation:
+
+1. Identify the failing criteria.
+2. Provide the original question and source passage to the generation model.
+3. Request a revised question.
+4. Validate the revised JSON.
+5. Evaluate the revision.
+6. Stop when it passes critical checks or reaches the configured attempt limit.
+
+Keep the previous versions for auditability where appropriate.
+
+Do not silently discard every failed question. Allow the user to inspect rejected questions and understand why they failed.
+
+Display:
+
+* Original question.
+* Revised question.
+* Previous quality score.
+* Updated quality score.
+* Changes made.
+* Remaining warnings.
+
+Prevent endless regeneration loops.
+
+---
+
+# 14. INTERACTIVE QUIZ EXPERIENCE
+
+## PAGE 12: Take a Quiz
+
+Build a premium quiz-taking interface.
+
+### Layout
+
+* Quiz title.
+* Topic.
+* Difficulty.
+* Total question count.
+* Current question number.
+* Animated progress bar.
+* Main question card.
+* Answer controls.
+* Previous and Next buttons.
+* Question navigation panel.
+* Submit Quiz button.
+
+### Interaction
+
+* Support radio-button answers for single-answer MCQs.
+* Support checkboxes for multiple-answer questions when implemented.
+* Support text inputs for short answers.
+* Support appropriate controls for true/false and fill-in-the-blank questions.
+* Save answers during the attempt.
+* Allow users to navigate between questions.
+* Warn users before submitting an incomplete quiz.
+* Confirm final submission.
+
+### Accessibility
+
+* Support keyboard navigation.
+* Maintain readable text sizes.
+* Use clear selected, correct, and incorrect states.
+* Provide reduced-motion behavior.
+* Do not rely on color alone to communicate answer correctness.
+
+### Scoring
+
+Automatically calculate:
+
+* Correct answers.
+* Incorrect answers.
+* Unanswered questions.
+* Total score.
+* Percentage.
+
+For short-answer questions, use a defined grading method and allow manual review when automatic grading is uncertain.
+
+Do not expose correct answers before submission unless the quiz settings explicitly enable practice mode.
+
+---
+
+# 15. QUIZ RESULTS AND PERFORMANCE ANALYTICS
+
+## PAGE 13: Results Page
+
+After submission, display a polished results experience.
+
+### Results Summary
+
+* Final score.
+* Percentage.
+* Correct answers.
+* Incorrect answers.
+* Unanswered questions.
+* Time taken, if measured.
+* Completion status.
+
+### Animated Score Presentation
+
+Use a smooth count-up animation and a progress ring or other accessible visualization.
+
+Display encouraging, neutral feedback without making unsupported claims about a user's ability.
+
+### Question Review
+
+For each question, show:
+
+* The question.
+* The user's answer.
+* The correct answer.
+* Explanation.
+* Supporting source passage.
+* Whether the answer was correct.
+
+### Topic Analysis
+
+Display:
+
+* Stronger topics.
+* Topics that may need revision.
+* Performance by difficulty.
+* Suggestions for further practice.
+
+Only generate recommendations from actual quiz results.
+
+### Actions
+
+* Retake Quiz.
+* Generate Another Quiz.
+* Review Study Material.
+* Download Results.
+* Return to Dashboard.
+
+---
+
+# 16. MY QUIZZES AND STUDY MATERIALS
+
+## PAGE 14: My Quizzes
+
+Show all quizzes created by the authenticated user.
+
+Include:
+
+* Search.
+* Filter by topic.
+* Filter by difficulty.
+* Filter by date.
+* Sort by creation date.
+* View quiz.
+* Continue an unfinished attempt.
+* Review completed results.
+* Duplicate quiz settings.
+* Delete quiz with confirmation.
+
+Display helpful empty states.
+
+## PAGE 15: My Study Materials
+
+Display the user's uploaded documents.
+
+Include:
+
+* Document name.
+* File type.
+* Upload date.
+* Processing status.
+* Number of generated quizzes.
+* Open extracted text.
+* Generate a quiz.
+* Delete document.
+
+Ensure deletion follows the application's document-retention policy and does not accidentally delete data belonging to another user.
+
+---
+
+# 17. SAVED QUESTIONS AND QUIZ EXPORTS
+
+## PAGE 16: Saved Questions
+
+Allow users to bookmark questions for later study.
+
+Include:
+
+* Saved question list.
+* Search and filters.
+* Source material.
+* Correct answer.
+* Explanation.
+* Remove bookmark.
+* Generate a quiz from saved questions where supported.
+
+## PAGE 17: EXPORT AND REPORTS
+
+Allow users to export:
+
+* Generated quizzes.
+* Answer keys.
+* Explanations.
+* Question-quality reports.
+* Quiz attempt results.
+* Performance summaries.
+
+Support PDF and CSV formats where appropriate.
+
+Provide server-generated files with authorization checks.
+
+Do not expose private document content or reports through predictable public URLs.
+
+---
+
+# 18. DATABASE DESIGN
+
+Use Supabase PostgreSQL.
+
+Design an appropriate relational schema with tables such as:
+
+### profiles
+
+* id.
+* full_name.
+* preferred_language.
+* theme_preference.
+* onboarding_completed.
+* created_at.
+* updated_at.
+
+Associate each profile with the authenticated Supabase user ID.
+
+### study_materials
+
+* id.
+* user_id.
+* document_name.
+* storage_path.
+* file_type.
+* file_size.
+* extracted_text or an appropriate reference to stored text.
+* processing_status.
+* created_at.
+
+### document_chunks
+
+* id.
+* study_material_id.
+* chunk_index.
+* content.
+* page_number, when available.
+* embedding or a reference to stored embedding data.
+
+### quizzes
+
+* id.
+* user_id.
+* study_material_id.
+* title.
+* topic.
+* difficulty.
+* question_count.
+* generation_settings.
+* status.
+* created_at.
+
+### questions
+
+* id.
+* quiz_id.
+* question_text.
+* question_type.
+* options.
+* correct_answer.
+* explanation.
+* source_chunk_id.
+* difficulty.
+* quality_score.
+* evaluation_status.
+* created_at.
+
+### question_evaluations
+
+* id.
+* question_id.
+* criterion_scores.
+* weighted_score.
+* critical_flags.
+* evaluator_explanation.
+* model_identifier.
+* created_at.
+
+### quiz_attempts
+
+* id.
+* user_id.
+* quiz_id.
+* score.
+* percentage.
+* correct_count.
+* incorrect_count.
+* unanswered_count.
+* started_at.
+* completed_at.
+
+### attempt_answers
+
+* id.
+* attempt_id.
+* question_id.
+* submitted_answer.
+* is_correct.
+* feedback.
+
+### saved_questions
+
+* id.
+* user_id.
+* question_id.
+* created_at.
+
+Adapt this schema as needed.
+
+Use migrations and appropriate indexes.
+
+Use foreign keys and deletion policies carefully.
+
+Store timestamps consistently.
+
+Never trust a user_id supplied by the frontend as proof of ownership. Derive user identity from a verified authentication context.
+
+---
+
+# 19. SECURITY REQUIREMENTS
+
+Treat security as a core requirement.
+
+Implement:
+
+* Supabase Auth for identity management.
+* Server-side session validation.
+* Row Level Security policies for user-specific records.
+* Protected frontend routes.
+* Backend authorization checks.
+* Input validation.
+* File upload restrictions.
+* Request size limits.
+* Rate limiting on expensive AI endpoints.
+* Safe error handling.
+* Environment-variable management.
+* Appropriate CORS configuration.
+* Secure account recovery.
+* Secure account deletion.
+* Protection against unauthorized document and quiz access.
+
+Keep the Supabase service role key and LLM API keys on the server only.
+
+Never place privileged keys in frontend environment variables or browser bundles.
+
+Do not store passwords directly in application tables.
+
+Use the authentication provider's password-management system.
+
+For production, configure HTTPS, secure session handling, logging, and monitoring.
+
+Treat uploaded documents as untrusted input. Prevent prompt injection in source documents from overriding the system's generation or evaluation instructions.
+
+Do not execute instructions found inside uploaded study materials.
+
+Keep source content separated from system instructions when constructing LLM prompts.
+
+Avoid logging sensitive document text, passwords, session tokens, or API keys.
+
+---
+
+# 20. BACKEND API DESIGN
+
+Implement REST endpoints similar to the following.
+
+### Authentication
+
+Use Supabase Auth flows and supported session-management methods rather than creating a separate password-authentication system.
+
+### Study Materials
+
+* POST /api/materials/upload
+* GET /api/materials
+* GET /api/materials/{material_id}
+* GET /api/materials/{material_id}/text
+* DELETE /api/materials/{material_id}
+
+### Quiz Generation
+
+* POST /api/quizzes/generate
+* GET /api/quizzes
+* GET /api/quizzes/{quiz_id}
+* DELETE /api/quizzes/{quiz_id}
+
+### Question Evaluation
+
+* POST /api/questions/{question_id}/evaluate
+* POST /api/questions/{question_id}/regenerate
+* GET /api/quizzes/{quiz_id}/quality-report
+
+### Quiz Attempts
+
+* POST /api/quizzes/{quiz_id}/attempts
+* POST /api/attempts/{attempt_id}/answers
+* POST /api/attempts/{attempt_id}/submit
+* GET /api/attempts/{attempt_id}/results
+
+### Analytics
+
+* GET /api/analytics/overview
+* GET /api/analytics/performance
+* GET /api/analytics/topics
+
+### Export
+
+* GET /api/quizzes/{quiz_id}/export
+* GET /api/attempts/{attempt_id}/export
+
+These are suggested routes. Implement consistent response schemas, authorization, validation, error handling, and pagination.
+
+Ensure every endpoint checks that the authenticated user is authorized to access the requested resource.
+
+Do not rely on frontend route protection alone.
+
+---
+
+# 21. PROJECT FOLDER STRUCTURE
+
+Organize the application clearly.
+
+Use a structure similar to:
+
+quizgenius-ai/
+│
+├── frontend/
+│   ├── app/
+│   │   ├── page.tsx
+│   │   ├── login/
+│   │   ├── signup/
+│   │   ├── forgot-password/
+│   │   ├── reset-password/
+│   │   ├── verify-email/
+│   │   ├── onboarding/
+│   │   ├── dashboard/
+│   │   ├── generate/
+│   │   ├── quizzes/
+│   │   ├── materials/
+│   │   ├── analytics/
+│   │   ├── saved-questions/
+│   │   ├── settings/
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── landing/
+│   │   ├── auth/
+│   │   ├── dashboard/
+│   │   ├── quiz/
+│   │   ├── upload/
+│   │   ├── analytics/
+│   │   └── animations/
+│   │
+│   ├── lib/
+│   │   ├── supabase/
+│   │   ├── api.ts
+│   │   ├── validation.ts
+│   │   └── utils.ts
+│   │
+│   ├── hooks/
+│   ├── types/
+│   ├── public/
+│   ├── package.json
+│   └── .env.example
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── api/
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   │   ├── document_processor.py
+│   │   │   ├── text_preprocessor.py
+│   │   │   ├── question_generator.py
+│   │   │   ├── quality_evaluator.py
+│   │   │   ├── similarity_checker.py
+│   │   │   ├── answer_validator.py
+│   │   │   ├── quiz_service.py
+│   │   │   ├── analytics_service.py
+│   │   │   └── report_generator.py
+│   │   └── utils/
+│   │
+│   ├── tests/
+│   ├── requirements.txt
+│   └── .env.example
+│
+├── supabase/
+│   └── migrations/
+│
+├── README.md
+└── .gitignore
+
+Adjust the folder structure where necessary, but maintain clear separation between the frontend, backend, AI services, and database.
+
+---
+
+# 22. ERROR HANDLING AND USER EXPERIENCE
+
+Handle common failures gracefully.
+
+Examples:
+
+* Invalid email or password.
+* Email verification pending.
+* Expired authentication session.
+* Password-reset link expired.
+* Unsupported file format.
+* Empty or unreadable document.
+* File too large.
+* AI provider unavailable.
+* Rate limit exceeded.
+* Invalid LLM output.
+* Question evaluation failure.
+* Quiz generation timeout.
+* Unauthorized resource access.
+* Database connection error.
+* Export generation failure.
+
+Show concise, actionable messages to the user.
+
+Provide retry options where safe.
+
+Do not display internal stack traces, database credentials, API keys, or sensitive system details.
+
+Use appropriate loading states and skeletons.
+
+---
+
+# 23. TESTING REQUIREMENTS
+
+Implement tests for:
+
+### Authentication
+
+* Successful registration.
+* Invalid form submission.
+* Login failure.
+* Password recovery.
+* Protected routes.
+* Session expiration.
+* Email verification handling.
+
+### Document Processing
+
+* Valid PDF.
+* Valid DOCX.
+* Valid TXT.
+* Empty document.
+* Unsupported format.
+* Malformed file.
+* Large file rejection.
+
+### AI Generation
+
+* Valid question generation.
+* Invalid JSON handling.
+* Missing answers.
+* Duplicate questions.
+* Unsupported answers.
+* Regeneration limits.
+
+### Quality Evaluation
+
+* Weighted score calculation.
+* Critical error detection.
+* Source relevance.
+* Semantic duplicate detection.
+* Evaluation failures.
+
+### Quiz Functionality
+
+* Answer submission.
+* Score calculation.
+* Unanswered questions.
+* Result persistence.
+* User-specific data access.
+* Export authorization.
+
+Use mocked LLM responses in automated tests so that most tests do not require paid API calls.
+
+---
+
+# 24. FINAL DELIVERABLES
+
+Build the project in working stages.
+
+Deliver:
+
+1. Complete frontend source code.
+2. Complete Python backend.
+3. Premium landing page.
+4. Animated login and registration pages.
+5. Password recovery and email verification.
+6. Supabase database schema and migrations.
+7. Secure user authentication.
+8. User onboarding.
+9. Personalized dashboard.
+10. Study material upload and extraction.
+11. LLM-based quiz generation.
+12. Transformer-based semantic similarity.
+13. LLM-as-a-judge quality evaluation.
+14. Question refinement workflow.
+15. Interactive quiz engine.
+16. Results and performance analytics.
+17. Quiz history and saved questions.
+18. PDF and CSV exports.
+19. Automated tests.
+20. Environment configuration examples.
+21. README with setup instructions.
+22. Local development instructions.
+23. Deployment instructions.
+
+Create real working functionality rather than static placeholder screens.
+
+Do not leave essential buttons disconnected.
+
+Do not use fake authentication, hard-coded dashboard statistics, fabricated evaluation scores, or simulated AI responses in the production workflow.
+
+If an external API or service requires credentials, explain how to configure it and provide a useful setup state when credentials are missing.
+
+If a feature cannot be completed within the initial implementation, clearly identify it instead of pretending it works.
+
+## IMPLEMENTATION ORDER
+
+Build the application in the following sequence:
+
+Phase 1: Project setup, design system, landing page, responsive navigation, and animation system.
+
+Phase 2: Supabase setup, sign-up, login, email verification, password recovery, sessions, and route protection.
+
+Phase 3: User profile, onboarding, database schema, dashboard, and theme settings.
+
+Phase 4: Document upload, extraction, preprocessing, and secure storage.
+
+Phase 5: LLM integration and structured quiz generation.
+
+Phase 6: Transformer embeddings, semantic similarity, LLM evaluation, and question refinement.
+
+Phase 7: Interactive quizzes, scoring, explanations, and answer review.
+
+Phase 8: Quiz history, analytics, saved questions, and exports.
+
+Phase 9: Automated tests, security review, accessibility checks, and deployment documentation.
+
+After completing each phase, verify that the implemented features work before moving to the next phase.
+
+Begin by presenting the architecture, folder structure, database schema, and setup requirements. Then create the actual files with complete implementations. Do not stop after providing a plan or a few code snippets.
+
+The final result should look and feel like a premium AI SaaS product, with smooth animations, a sophisticated visual identity, secure authentication, and a genuinely functional AI-powered quiz generation and evaluation pipeline.
